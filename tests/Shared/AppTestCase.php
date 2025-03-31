@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Tests\Shared;
+namespace AwdEs\Indexes\Tests\Shared;
 
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;

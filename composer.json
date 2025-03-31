@@ -37,14 +37,14 @@
   },
   "autoload": {
     "psr-4": {
-      "AwdEs\\": "src/"
+      "AwdEs\\Indexes\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "AwdEs\\Tests\\": "tests/",
-      "AwdEs\\Tests\\Shared\\": "tests/Shared/",
-      "AwdEs\\Tests\\Unit\\": "tests/Unit/"
+      "AwdEs\\Indexes\\Tests\\": "tests/",
+      "AwdEs\\Indexes\\Tests\\Shared\\": "tests/Shared/",
+      "AwdEs\\Indexes\\Tests\\Unit\\": "tests/Unit/"
     }
   },
   "config": {

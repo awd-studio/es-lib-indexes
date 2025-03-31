@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\ValueObject;
+namespace AwdEs\Indexes\ValueObject;
+
+use AwdEs\ValueObject\Id;
 
 /**
  * @extends \IteratorAggregate<\AwdEs\ValueObject\Id>

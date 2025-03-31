@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\QueryBuilder;
+namespace AwdEs\Indexes\QueryBuilder;
 
 final readonly class IndexQueryBuilder
 {

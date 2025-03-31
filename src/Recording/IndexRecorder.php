@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Recording;
+namespace AwdEs\Indexes\Recording;
 
 use Awd\ValueObject\IDateTime;
 use AwdEs\Indexes\Index;

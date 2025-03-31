@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Shared\Exception;
+namespace AwdEs\Indexes\Shared\Exception;
 
 use AwdEs\Exception\PersistenceError;
 

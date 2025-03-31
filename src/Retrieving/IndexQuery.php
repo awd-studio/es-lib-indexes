@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Retrieving;
+namespace AwdEs\Indexes\Retrieving;
 
 interface IndexQuery {}

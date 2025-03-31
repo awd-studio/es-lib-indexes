@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Erasing\Exception;
+namespace AwdEs\Indexes\Erasing\Exception;
 
-use AwdEs\Shared\Exception\PersistenceException;
+use AwdEs\Indexes\Shared\Exception\PersistenceException;
 
 final class IndexErasingError extends PersistenceException {}

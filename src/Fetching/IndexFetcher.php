@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Fetching;
+namespace AwdEs\Indexes\Fetching;
 
-use AwdEs\Retrieving\IndexQuery;
-use AwdEs\ValueObject\IdCollection;
+use AwdEs\Indexes\Retrieving\IndexQuery;
+use AwdEs\Indexes\ValueObject\IdCollection;
 
 interface IndexFetcher
 {

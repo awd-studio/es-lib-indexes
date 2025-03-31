@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AwdEs\Erasing;
+namespace AwdEs\Indexes\Erasing;
 
 use Awd\ValueObject\IDateTime;
 use AwdEs\Indexes\Index;
