@@ -14,12 +14,12 @@ use AwdEs\Meta\ClassMeta;
 final readonly class IndexMeta implements ClassMeta
 {
     /**
-     * @param class-string<TIndex>                         $fqn
-     * @param class-string<\AwdEs\Aggregate\AggregateRoot> $aggregateRootFqn
+     * @param class-string<TIndex>                  $fqn
+     * @param class-string<\AwdEs\Aggregate\Entity> $entityFqn
      */
     public function __construct(
-        public string $id,
+        public string $name,
         public string $fqn,
-        public string $aggregateRootFqn,
+        public string $entityFqn,
     ) {}
 }

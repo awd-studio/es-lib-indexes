@@ -19,7 +19,7 @@ final class InMemoryIndexRegistry implements IndexRegistry
     public function register(string $indexFqn): void
     {
         $meta = $this->reader->read($indexFqn);
-        $this->registry[$meta->id] = $indexFqn;
+        $this->registry[$meta->name] = $indexFqn;
     }
 
     #[\Override] // @phpstan-ignore missingType.generics
