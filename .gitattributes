@@ -14,6 +14,9 @@
 *.php           text
 
 # Exclude files from exporting
+/.github            export-ignore
+/docker             export-ignore
+/tools              export-ignore
 /.phpstorm.meta.php export-ignore
 /bin                export-ignore
 /build              export-ignore

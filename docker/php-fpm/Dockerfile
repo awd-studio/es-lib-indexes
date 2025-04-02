@@ -11,9 +11,10 @@ ARG APP_WORK_DIR=/var/www/app
 
 WORKDIR ${APP_WORK_DIR}
 
-# Set www-data to have UID 1000
-RUN usermod -u 1000 ${SYS_USER_NAME};
-RUN chown -R ${SYS_USER_NAME}:${SYS_USER_NAME} ${APP_WORK_DIR} && chmod -R 755 ${APP_WORK_DIR}
+# Set www-data to have UID 1000 and ensure the shell is bash
+RUN usermod -u 1000 ${SYS_USER_NAME} && \
+    chown -R ${SYS_USER_NAME}:${SYS_USER_NAME} ${APP_WORK_DIR} && \
+    chmod -R 755 ${APP_WORK_DIR}
 
 # Install system dependencies
 RUN apt-get update -y && apt-get install -y --no-install-recommends \

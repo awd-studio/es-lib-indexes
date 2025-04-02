@@ -33,7 +33,7 @@ php: ## Returns a bash of the PHP container
 
 .PHONY: php-bash
 php-bash:
-	$(DOCKER_COMPOSE) exec php-fpm bash -l
+	$(DOCKER_COMPOSE) exec php-fpm bash
 
 ## —— ✅ Test ——————————————————————————————————————————————————————————————————
 .PHONY: tests
@@ -51,10 +51,17 @@ build: ## Build app with fresh images
 start: ## Start the app
 	$(DOCKER_COMPOSE) up -d
 
+.PHONY: terminate
+terminate: ## Unsets all the set
+	$(MAKE) stop
+	$(DOCKER_COMPOSE) down --remove-orphans --volumes
+	$(DOCKER_COMPOSE) rm -vsf
+	@$(call GREEN,"The application was terminated successfully.")
+
 .PHONY: rebuild
 rebuild: ## Rebuilds all docker containers
-	$(MAKE) stop
-	$(DOCKER_COMPOSE) up -d --no-deps --build
+	$(MAKE) terminate
+	$(MAKE) init
 
 .PHONY: stop
 stop: ## Stop app
