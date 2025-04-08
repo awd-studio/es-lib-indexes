@@ -5,16 +5,11 @@ declare(strict_types=1);
 namespace AwdEs\Indexes\Erasing;
 
 use Awd\ValueObject\IDateTime;
-use AwdEs\Indexes\Index;
 
 interface IndexEraser
 {
     /**
-     * @template T
-     *
-     * @param Index<T> $index
-     *
      * @throws Exception\IndexErasingError
      */
-    public function erase(Index $index, IDateTime $erasedAt): void;
+    public function erase(IndexErasingCriteria $criteria, IDateTime $erasedAt): void;
 }
