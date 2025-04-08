@@ -10,11 +10,11 @@ use AwdEs\Attribute\AwdEsAttribute;
 final readonly class AsIndex implements AwdEsAttribute
 {
     /**
-     * @param string                                       $name    a unique ID of an entity in the system
-     * @param class-string<\AwdEs\Aggregate\AggregateRoot> $rootFqn the aggregate class' fqcn
+     * @param string                                $name      a unique ID of an entity in the system
+     * @param class-string<\AwdEs\Aggregate\Entity> $entityFqn the entity class' fqcn
      */
     public function __construct(
         public string $name,
-        public string $rootFqn,
+        public string $entityFqn,
     ) {}
 }
